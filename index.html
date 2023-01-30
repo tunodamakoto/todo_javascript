@@ -17,26 +17,14 @@
     <main class="content">
         <div class="content-inner">
             <div class="todo-head">
-                <div class="todo-delete">完了済みを削除</div>
+                <div class="todo-delete" id="deleteTodo">完了済みを削除</div>
             </div>
             <div class="todo-card">
-                <form action="" class="todo-card-form">
-                    <input type="text" placeholder="タスクを追加">
-                    <button type="submit">追加</button>
-                </form>
-                <ul class="todo-card-list">
-                    <li>
-                        <input type="checkbox" id="">
-                        <label for="">テキストテキストテキスト</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="">
-                        <label for="">テキストテキストテキスト</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="">
-                        <label for="">テキストテキストテキスト</label>
-                    </li>
+                <div class="todo-card-form">
+                    <input type="text" id="inputTodo" placeholder="タスクを追加" autofocus>
+                    <button type="submit" id="addBtn">追加</button>
+                </div>
+                <ul id="todoLists" class="todo-card-list">
                 </ul>
             </div>
         </div>

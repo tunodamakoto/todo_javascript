@@ -52,6 +52,7 @@ body{
 .todo-delete{
     font-size: 14px;
     color: #aaaaaa;
+    cursor: pointer;
 }
 .todo-delete::before{
     content: "\f1f8";
@@ -90,12 +91,16 @@ body{
     border-radius: 5px;
 }
 .todo-card-list li{
-    display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
-    gap: 15px;
     margin-bottom: 15px;
+}
+.todo-card-list li input{
+    margin-right: 15px;
+}
+.todo-card-list li span{
+    color: #371fa2;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
 }
 
 .done{
